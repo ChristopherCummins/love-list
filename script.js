@@ -69,7 +69,7 @@ function checkListLength() {
             "I love that you value having diverse perspectives in your life.",
             "I love that you are a perpetual learner.",
             "I love that you support causes close to your heart.",
-            "I love that you don't shy away from explaining to anyone why justice for Artpop is still needed.",
+            "I love that you don't shy away from explaining why justice for Artpop is still needed.",
             "I love that you don't let fear stop you from showing your feelings.",
             "I love that you know things may be difficult and do them anyway.",
             "I love that you take an active role in engineering a life that fuels your spirit.",
@@ -83,13 +83,12 @@ function checkListLength() {
             "I love the way you will open a window when it's 17 degrees outside.",
             "I love the way you say 'bebe'.",
             "I love that you're an encyclopedia of everything that's ever happened in New York City after 1985.",
-            "I love the way you can set up and lead others.",
+            "I love the way you're willing to lead others.",
             "I love that you can motivate others to believe they can have a more satisfying life.",
             "I love the way you share your knowledge with others rather than hoard it to yourself.",
             "I love that you have a witchy cure for any symptom.",
             "I love the way you guide others through casting spells",
             "I love the faces you make when you really have something to say.",
-            "I love when you tell people what they ought to do.",
             "I love when you imitate me.",
             "I love that you have a workshopped impression of anyone ready to go at a moment's notice.",
             "I love how intensely you love.",
@@ -104,8 +103,9 @@ function checkListLength() {
             "I love the way you defend people you love.",
             "I love that you have allowed your relationship with your spirituality to evolve.",
             "I love the way your giggle at your phone to yourself.",
-            "I love that you can tell a story better than anyone else."
-
+            "I love that you can tell a story better than anyone else.",
+            "I love the way you dance.",
+            "I love how you give weight to all of your relationships."
         ]
     }
 }
@@ -144,7 +144,7 @@ let loveList = [
     "I love that you value having diverse perspectives in your life.",
     "I love that you are a perpetual learner.",
     "I love that you support causes close to your heart.",
-    "I love that you don't shy away from explaining to anyone why justice for Artpop is still needed.",
+    "I love that you don't shy away from explaining why justice for Artpop is still needed.",
     "I love that you don't let fear stop you from showing your feelings.",
     "I love that you know things may be difficult and do them anyway.",
     "I love that you take an active role in engineering a life that fuels your spirit.",
@@ -158,13 +158,12 @@ let loveList = [
     "I love the way you will open a window when it's 17 degrees outside.",
     "I love the way you say 'bebe'.",
     "I love that you're an encyclopedia of everything that's ever happened in New York City after 1985.",
-    "I love the way you can set up and lead others.",
+    "I love the way you're willing to lead others.",
     "I love that you can motivate others to believe they can have a more satisfying life.",
     "I love the way you share your knowledge with others rather than hoard it to yourself.",
     "I love that you have a witchy cure for any symptom.",
     "I love the way you guide others through casting spells",
     "I love the faces you make when you really have something to say.",
-    "I love when you tell people what they ought to do.",
     "I love when you imitate me.",
     "I love that you have a workshopped impression of anyone ready to go at a moment's notice.",
     "I love how intensely you love.",
@@ -179,7 +178,10 @@ let loveList = [
     "I love the way you defend people you love.",
     "I love that you have allowed your relationship with your spirituality to evolve.",
     "I love the way your giggle at your phone to yourself.",
-    "I love that you can tell a story better than anyone else."
+    "I love that you can tell a story better than anyone else.",
+    "I love the way you dance.",
+    "I love how you give weight to all of your relationships."
+
     ];
 
 runApp();

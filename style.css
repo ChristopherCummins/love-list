@@ -68,20 +68,31 @@
 
 
 .quote {
-    font-size: 20px;
+    font-size: 4vw;
     height: 100%;
     text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .another {
-    font-size: 5vw;
+    font-size: 4vw;
     height: 100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
 }
 
 @media (min-width:600px) {
     .another {
         font-size: 20px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
     }
+}
+
+@media (min-width:600px) {
+  .quote {
+    font-size: 20px;
+  }
 }
 
 
