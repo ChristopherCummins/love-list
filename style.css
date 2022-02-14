@@ -1,30 +1,81 @@
 .app {
     display: flex;
     flex-direction: column;
-    max-height: 100%;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.html {
+  height: 100%;
+}
+
+.body {
+  height: 100%;
+
+}
+
+.headerWrapper {
+  background: white;
+  opacity: 70%;
+  height: 15vh;
+  position: relative;
+  background-color: rgb(255, 202, 202);
+
 }
 
 .header {
-    align-self: center;
     font-family: 'Oleo Script', cursive;    
     margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 7vw;
+    margin-bottom: 2%;
+    font-size: 45px;
+    text-align: center;
+    position: relative;;
+
+}
+
+@media (min-width:600px) {
+  .header {
+      font-size: 60px;
+  }
+}
+
+.middleWrapper {
+  background-image: url("EDCC41DB-BF8C-4AF2-9DC9-6E7626786ED6_1_102_a.jpeg");
+  background-size: 300px;
+}
+
+.footerWrapper {
+  background-color: rgb(255, 143, 143);
+  bottom: 0;
+  width: 100%;
+  height: 20vh;
+}
+
+.footer {
+  font-size: 1.7em;
+  text-align: center;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  font-family: 'Marck Script', cursive;
 }
 
 .quoteWrapper {
-    width: 70%;
-    align-self: center;
+    width: 75%;
+    height: 100%;
 }
 
 
 .quote {
     font-size: 20px;
+    height: 100%;
+    text-align: center;
 }
 
 .another {
     font-size: 5vw;
+    height: 100%;
 }
 
 @media (min-width:600px) {
@@ -37,119 +88,40 @@
 .secondRowContent {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-start;
+    height: 100%;
 }
 
 .brianBubbleWrapper {
     width: 20%;
     align-self: center;
     margin-bottom: auto;
+    height: 100%;
 }
 
 .chrisWrapper {
     margin-right: auto;
+    height: 100%;
 }
 
 
 .chrisPhoto {
-    max-width: 75%;
-    max-height: 100%;
+    width: 65%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 10%;
 }
 
 .brianPhoto {
-    max-width: 75%;
-    max-height: 100%;
+    width: 65%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
-.rectangle-speech-border {
-    position:relative;
-    padding:50px 15px;
-    margin:1em 0 3em;
-    border:10px solid #5a8f00;
-    text-align:center;
-    color:#333;
-    background:#fff;
-    /* css3 */
-    -webkit-border-radius:20px;
-    -moz-border-radius:20px;
-    border-radius:20px;
-  }
-  
-  /* creates larger curve */
-  .rectangle-speech-border:before {
-    content:"";
-    position:absolute;
-    z-index:10;
-    bottom:-40px;
-    left:50px;
-    width:50px;
-    height:30px;
-    border-style:solid;
-    border-width:0 10px 10px 0;
-    border-color:#5a8f00;
-    background:transparent;
-    /* css3 */
-    -webkit-border-bottom-right-radius:80px 50px;
-    -moz-border-radius-bottomright:80px 50px;
-    border-bottom-right-radius:80px 50px;
-    /* reduce the damage in FF3.0 */
-    display:block;
-  }
-  
-  /* creates smaller curve */
-  .rectangle-speech-border:after {
-    content:"";
-    position:absolute;
-    z-index:10;
-    bottom:-40px;
-    left:50px;
-    width:20px;
-    height:30px;
-    border-style:solid;
-    border-width:0 10px 10px 0;
-    border-color:#5a8f00;
-    background:transparent;
-    /* css3 */
-    -webkit-border-bottom-right-radius:40px 50px;
-    -moz-border-radius-bottomright:40px 50px;
-    border-bottom-right-radius:40px 50px;
-    /* reduce the damage in FF3.0 */
-    display:block;
-  }
-  
-  /* creates a small circle to produce a rounded point where the two curves meet */
-  .rectangle-speech-border > :first-child:before {
-    content:"";
-    position:absolute;
-    bottom:-40px;
-    left:45px;
-    width:10px;
-    height:10px;
-    background:#5a8f00;
-    /* css3 */
-    -webkit-border-radius:10px;
-    -moz-border-radius:10px;
-    border-radius:10px;
-  }
-  
-  /* creates a white rectangle to cover part of the oval border*/
-  .rectangle-speech-border > :first-child:after {
-    content:"";
-    position:absolute;
-    bottom:-10px;
-    left:76px;
-    width:24px;
-    height:15px;
-    background:#fff;
-  }
-
 
 .triangle-border {
     position:relative;
@@ -157,8 +129,8 @@
     padding:15px;
     margin:1em 0 3em;
     border:5px solid #992045;
-    color:#333;
-    background:#fff;
+    color:rgb(255, 255, 255);
+    background:rgb(31, 31, 31);
     text-align: center;
     /* css3 */
     -webkit-border-radius:10px;
@@ -188,7 +160,7 @@
     left:47px; /* value = (:before left) + (:before border-left) - (:after border-left) */
     border-width:13px 13px 0;
     border-style:solid;
-    border-color:#fff transparent;
+    border-color:rgb(31, 31, 31)transparent;
     /* reduce the damage in FF3.0 */
     display:block;
     width:0;
@@ -211,5 +183,46 @@
     left:auto;
     right:-21px; /* value = - border-left-width - border-right-width */
     border-width:9px 0 9px 21px;
-    border-color:transparent #fff;
+    border-color:transparent rgb(31, 31, 31);
+  }
+
+
+  .chris-border {
+    position:relative;
+    padding:15px;
+    margin:1em 0 3em 2em;
+    border:5px solid #cf7979;
+    color:rgb(255, 255, 255);
+    background:rgb(31, 31, 31);
+    /* css3 */
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+  }
+
+  .chris-border:before {
+    content:"";
+    position:absolute;
+    bottom:-20px; /* value = - border-top-width - border-bottom-width */
+    left:40px; /* controls horizontal position */
+    border-width:20px 20px 0;
+    border-style:solid;
+    border-color:#cf7979 transparent;
+    /* reduce the damage in FF3.0 */
+    display:block;
+    width:0;
+  }
+  
+  /* creates the smaller  triangle */
+  .chris-border:after {
+    content:"";
+    position:absolute;
+    bottom:-13px; /* value = - border-top-width - border-bottom-width */
+    left:47px; /* value = (:before left) + (:before border-left) - (:after border-left) */
+    border-width:13px 13px 0;
+    border-style:solid;
+    border-color:rgb(31, 31, 31) transparent;
+    /* reduce the damage in FF3.0 */
+    display:block;
+    width:0;
   }
